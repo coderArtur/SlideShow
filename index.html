@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SlideShow</title>
-  <link rel="stylesheet" href="./style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlideShow</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/Creative-Tail-rocket.svg" />
+
+    <meta
+      name="description"
+      content="Projeto simples feito para treinar HTML e CSS."
+    />
+    <meta
+      name="image"
+      content="https://media.discordapp.net/attachments/942541903461744700/983843406331641886/unknown.png?width=1440&height=664"
+    />
+
+    <meta property="og:url" content="https://coderartur.github.io/SlideShow/" />
+    <meta property="og:title" content="SlideShow." />
+    <meta
+      property="og:description"
+      content="Projeto simples feito para treinar HTML e CSS."
+    />
+    <meta property="og:site_name" content="SlideShow." />
+    <meta
+      property="og:image"
+      content="https://media.discordapp.net/attachments/942541903461744700/983843406331641886/unknown.png?width=1440&height=664"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://media.discordapp.net/attachments/942541903461744700/983843406331641886/unknown.png?width=1440&height=664"
+    />
+
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1859" />
+    <meta property="og:image:height" content="857" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
     </style>
-</head>
-<body>
-  <header>
-    <div>
-      <h1>SlideShow</h1>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>SlideShow</h1>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="slides">
+        <input type="radio" name="slide" id="slide1" checked />
+        <input type="radio" name="slide" id="slide2" />
+        <input type="radio" name="slide" id="slide3" />
+        <input type="radio" name="slide" id="slide4" />
+        <input type="radio" name="slide" id="slide5" />
+
+        <div class="slide s1">
+          <img
+            src="./images/paisagem_com_montanhas_na_esquerda_ e_casas_com_chamine_saindo_fumaca_no_por_do_sol.jpg"
+            alt="Paisagem com montanhas na esquerda e casas com chamine saindo fumaca no por do sol"
+          />
+        </div>
+
+        <div class="slide">
+          <img
+            src="./images/paisagem_fantasia_com _lago_e_um_rio_um_homem_capa_olhando_para_a_natureza.jpg"
+            alt="Paisagem fantasia com  lago e um rio um homem capa olhando para a natureza"
+          />
+        </div>
+
+        <div class="slide">
+          <img
+            src="./images/astronauta_em_meio_ao_oceano_em_pe_com_borboletas_saindo_de_seu_capacete.jpg"
+            alt="Astronauta em meio ao oceano em pé com borboletas saindo de seu capacete"
+          />
+        </div>
+
+        <div class="slide">
+          <img
+            src="./images/paisagem_lago_azul_com_montanhas_com_neve_em_frente.jpg"
+            alt="Paisagem lago azul com montanhas com neve em frente"
+          />
+        </div>
+
+        <div class="slide">
+          <img
+            src="./images/paisagem_fantasia_terra_suspensa_com_pequenos_rios_transbordando.jpg"
+            alt="Paisagem fantasia terra suspensa com pequenos rios transbordando"
+          />
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+        <label class="bar" for="slide4"></label>
+        <label class="bar" for="slide5"></label>
+      </div>
     </div>
-  </header>
 
-  <div class="content">
-    <div class="slides">
-      <input type="radio" name="slide" id="slide1" checked>
-      <input type="radio" name="slide" id="slide2">
-      <input type="radio" name="slide" id="slide3">
-      <input type="radio" name="slide" id="slide4">
-      <input type="radio" name="slide" id="slide5">
-
-      <div class="slide s1">
-        <img src="./images/paisagem_com_montanhas_na_esquerda_ e_casas_com_chamine_saindo_fumaca_no_por_do_sol.jpg" alt="Paisagem com montanhas na esquerda e casas com chamine saindo fumaca no por do sol">
-      </div>
-
-      <div class="slide">
-        <img src="./images/paisagem_fantasia_com _lago_e_um_rio_um_homem_capa_olhando_para_a_natureza.jpg" alt="Paisagem fantasia com  lago e um rio um homem capa olhando para a natureza">
-      </div>
-
-      <div class="slide">
-        <img src="./images/astronauta_em_meio_ao_oceano_em_pe_com_borboletas_saindo_de_seu_capacete.jpg" alt="Astronauta em meio ao oceano em pé com borboletas saindo de seu capacete">
-      </div>
-
-      <div class="slide">
-        <img src="./images/paisagem_lago_azul_com_montanhas_com_neve_em_frente.jpg" alt="Paisagem lago azul com montanhas com neve em frente">
-      </div>
-
-      <div class="slide">
-        <img src="./images/paisagem_fantasia_terra_suspensa_com_pequenos_rios_transbordando.jpg" alt="Paisagem fantasia terra suspensa com pequenos rios transbordando">
-      </div>
-    </div>
-
-    <div class="navigation">
-      <label class="bar" for="slide1"></label>
-      <label class="bar" for="slide2"></label>
-      <label class="bar" for="slide3"></label>
-      <label class="bar" for="slide4"></label>
-      <label class="bar" for="slide5"></label>
-    </div>
-
-  </div>
-
-  <footer>
-    <p>By:</p>
-    <a href="https://github.com/coderArtur" target="_blank">Artur Lago</a>
-  </footer>
-</body>
+    <footer>
+      <p>By:</p>
+      <a href="https://github.com/coderArtur" target="_blank">Artur Lago</a>
+    </footer>
+  </body>
 </html>
